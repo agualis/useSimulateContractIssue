@@ -67,26 +67,3 @@ function SecondStep({setTxNumber}: {setTxNumber: (n: number) => void}) {
     { tx2Hash && <div> Hash2: {tx2Hash}</div>}
   </div>)
 }
-
-
-// function SecondTx({setTxNumber}: {setTxNumber: (n: number) => void}) {
-//   const {simulateQuery2, writeMutation2, receiptQuery2, runTx2} = useSecondTransaction()
-//   const tx2Hash = receiptQuery2.data?.transactionHash
-
-//   useEffect(() => {
-//     if (tx2Hash){
-//       console.log({tx2Hash})
-//       setTxNumber(2)
-//     }
-//     setTxNumber(1)
-//   }, [tx2Hash])
-
-//   return (
-//   <div>
-//     <button onClick={runTx2}>Run second transaction</button>
-//     <div>Simulation2: {simulateQuery2.status}</div>
-//     <div>Write2: {writeMutation2.status}</div>
-//     <div>Receipt2: {receiptQuery2.status}</div>
-//     { tx2Hash && <div> Hash: {tx2Hash}</div>}
-//   </div>)
-// }
