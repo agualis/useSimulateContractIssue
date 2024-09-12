@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from 'react'
-import { useTransactionStep as useTransactionStep } from './hooks/useFirstTransaction'
+import { useTransactionStep as useTransactionStep } from './hooks/useTransactionStep'
 
 export function Transactions() {
 
